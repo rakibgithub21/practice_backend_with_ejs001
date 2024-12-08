@@ -9,22 +9,22 @@
 </head>
 
 <body>
-    <%- include('partials/navbar.ejs') %> <!-- Include Navbar -->
+    <%- include('partials/navbar.ejs') %>
         <div class="flex bg-white dark:bg-gray-900 justify-center items-center min-h-screen">
             <div class="w-full max-w-sm p-6 m-auto mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
                 <div class="flex justify-center mx-auto">
                     <img class="w-auto h-7 sm:h-8" src="https://merakiui.com/images/logo.svg" alt="">
                 </div>
 
-                <form class="mt-6">
+                <form action="/register" method="post" class="mt-6">
                     <div>
                         <label for="username" class="block text-sm text-gray-800 dark:text-gray-200">Username</label>
-                        <input type="text"
+                        <input id="username" name="username" type="text"
                             class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" />
                     </div>
                     <div class="mt-4">
-                        <label for="username" class="block text-sm text-gray-800 dark:text-gray-200">Email</label>
-                        <input type="text"
+                        <label for="email" class="block text-sm text-gray-800 dark:text-gray-200">Email</label>
+                        <input id="email" name="email" type="text"
                             class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" />
                     </div>
 
@@ -34,7 +34,7 @@
                                 class="block text-sm text-gray-800 dark:text-gray-200">Password</label>
                         </div>
 
-                        <input type="password"
+                        <input id="password" name="password" type="password"
                             class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" />
                     </div>
 
